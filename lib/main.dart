@@ -128,7 +128,8 @@ class _MyHomePageState extends State<MyHomePage> {
     Random rnd = Random();
     setState(() {
       for (int i = 0; i < 50; i++) {
-        Swap(pos[rnd.nextInt(pos.length)], pos[rnd.nextInt(pos.length)]);
+        move(pos[rnd.nextInt(pos.length)]);
+        //Swap(pos[rnd.nextInt(pos.length)], pos[rnd.nextInt(pos.length)]);
       }
       //var end = pos[rnd.nextInt(pos.length)];
       //end.column = 5;
